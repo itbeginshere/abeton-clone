@@ -10,38 +10,38 @@ const MainNavbar = () => {
     }
 
     return (
-        <div className={''}>
-            <div>
-                <div>
+        <div className={'p-5 border-solid border-grey-200 border-b-2'}>
+            <div className={'flex flex-row justify-between'}>
+                <div className={'flex flex-row gap-8'}>
                     <LogoSVG />
-                    <a href={'#'}>
-                        <span>Live</span>
+                    <a href={'#'} className={'pl-6'}>
+                        <span className={'text-custom-small-bold text-custom-text'}>Live</span>
                     </a>
                     <a href={'#'}>
-                        <span>Push</span>
+                        <span className={'text-custom-small-bold text-custom-text'}>Push</span>
                     </a>
                     <a href={'#'}>
-                        <span>Link</span>
+                        <span className={'text-custom-small-bold text-custom-text'}>Link</span>
                     </a>
                     <a href={'#'}>
-                        <span>Shop</span>
+                        <span className={'text-custom-small-bold text-custom-text'}>Shop</span>
                     </a>
                     <a href={'#'}>
-                        <span>Packs</span>
+                        <span className={'text-custom-small-bold text-custom-text'}>Packs</span>
                     </a>
                     <a href={'#'}>
-                        <span>Help</span>
+                        <span className={'text-custom-small-bold text-custom-text'}>Help</span>
                     </a>
                     <a href={'#'} onClick={onToggleCollapsibleMenu}>
-                        <span>More</span>
+                        <span className={'text-custom-small-bold text-custom-coral'}>More</span>
                     </a>
                 </div>
-                <div>
+                <div className={'flex flex-row gap-8'}>
                     <a href={'#'}>
-                        <span>Try Live for free</span>
+                        <span className={'text-custom-extra-small-bold text-custom-blue'}>Try Live for free</span>
                     </a>
                     <a href={'#'}>
-                        <span>Log in or register</span>
+                        <span className={'text-custom-extra-small-bold text-custom-text'}>Log in or register</span>
                     </a>
                 </div>
             </div>

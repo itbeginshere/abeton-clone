@@ -19,6 +19,24 @@ module.exports = {
         'custom-blue': '#0000ff',
         'custom-text': '#000000'
       },
+      fontSize: {
+        'custom-extra-small-bold': ['14px',{
+          fontWeight: 600,
+          lineHeight: '21px',
+        }],
+        'custom-small-bold': ['18px', {
+            fontWeight: 600,
+            lineHeight: '30px',
+        }],
+        'custom-small': ['18px', {
+          fontWeight: 400,
+          lineHeight: '30px',
+        }],
+        'custom-large-bold': ['30px', {
+          fontWeight: 600,
+          lineHeight: '42px',
+        }]
+      }
     },
   },
   plugins: [],

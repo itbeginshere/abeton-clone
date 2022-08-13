@@ -1,11 +1,12 @@
 import React from 'react';
 
-const LogoSVG = (props : React.SVGProps<React.ReactSVGElement>) : React.ReactElement => {
+const LogoSVG = (props : React.SVGProps<SVGSVGElement>) : React.ReactElement => {
     return (
         <svg 
             role="img"
             aria-labelledby="logo" 
             xmlns="http://www.w3.org/2000/svg" 
+            {...props}
             width="3.75em" 
             height="1.75em" 
             viewBox="0 0 45 21"
