@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import MainNavbar from '../components/MainNavbar'
+import QuickNavbar from '../components/QuickNavbar'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
 
       <main>
         <MainNavbar />
+        <QuickNavbar />
       </main>
 
       <footer>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LogoSVG = (props : React.SVGProps<SVGSVGElement>) : React.ReactElement => {
     return (
         <svg 
@@ -22,8 +20,3 @@ const LogoSVG = (props : React.SVGProps<SVGSVGElement>) : React.ReactElement => 
 }
 
 export default LogoSVG;
-
-// main-nav__logo__image
-// display: block;
-//     width: 3.75em;
-//     height: 1.75em;

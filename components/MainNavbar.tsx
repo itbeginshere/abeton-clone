@@ -1,5 +1,8 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import LogoSVG from './svgs/LogoSVG';
+import MinusSVG from './svgs/MinusSVG';
+import PlusSVG from './svgs/PlusSVG';
 
 const MainNavbar = () => {
 
@@ -10,94 +13,93 @@ const MainNavbar = () => {
     }
 
     return (
-        <div className={'p-5 border-solid border-grey-200 border-b-2'}>
+        <div className={'p-5 border-solid border-b-2 border-gray-200'}>
             <div className={'flex flex-row justify-between'}>
                 <div className={'flex flex-row gap-8'}>
                     <LogoSVG />
-                    <a href={'#'} className={'pl-6'}>
+                    <Link href={'#'} passHref className={'pl-6'}>
                         <span className={'text-custom-small-bold text-custom-text'}>Live</span>
-                    </a>
-                    <a href={'#'}>
+                    </Link>
+                    <Link href={'#'} passHref>
                         <span className={'text-custom-small-bold text-custom-text'}>Push</span>
-                    </a>
-                    <a href={'#'}>
+                    </Link>
+                    <Link href={'#'} passHref>
                         <span className={'text-custom-small-bold text-custom-text'}>Link</span>
-                    </a>
-                    <a href={'#'}>
+                    </Link>
+                    <Link href={'#'} passHref>
                         <span className={'text-custom-small-bold text-custom-text'}>Shop</span>
-                    </a>
-                    <a href={'#'}>
+                    </Link>
+                    <Link href={'#'} passHref>
                         <span className={'text-custom-small-bold text-custom-text'}>Packs</span>
-                    </a>
-                    <a href={'#'}>
+                    </Link>
+                    <Link href={'#'} passHref>
                         <span className={'text-custom-small-bold text-custom-text'}>Help</span>
-                    </a>
-                    <a href={'#'} onClick={onToggleCollapsibleMenu}>
-                        <span className={'text-custom-small-bold text-custom-coral'}>More</span>
-                    </a>
+                    </Link>
+                    <Link href={'#'} passHref onClick={onToggleCollapsibleMenu} className={'flex flex-row items-center'}>
+                        <span className={'text-custom-small-bold text-custom-coral'}>
+                            More 
+                        </span>
+                        {
+                            collaspibleMenuToggle ? 
+                                <PlusSVG className={'fill-current text-custom-coral inline'}/> :
+                                <MinusSVG className={'fill-current text-custom-coral inline'}/>
+                        }
+                    </Link>
                 </div>
                 <div className={'flex flex-row gap-8'}>
-                    <a href={'#'}>
+                    <Link href={'#'} passHref>
                         <span className={'text-custom-extra-small-bold text-custom-blue'}>Try Live for free</span>
-                    </a>
-                    <a href={'#'}>
+                    </Link>
+                    <Link href={'#'} passHref>
                         <span className={'text-custom-extra-small-bold text-custom-text'}>Log in or register</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
             {
                 collaspibleMenuToggle && (
-                    <div>
-                        <p>More on Ableton.com:</p>
-                        <div>
-                            <a href={'#'}>
-                                <span>Blog</span>
-                            </a>
-                            <a href={'#'}>
-                                <span>Ableton for the Classroom</span>
-                            </a>
-                              <a href={'#'}>
-                                <span>Ableton for Colleges and Universities</span>
-                            </a>
-                              <a href={'#'}>
-                                <span>Certified Training</span>
-                            </a>
-                              <a href={'#'}>
-                                <span>About Ableton</span>
-                            </a>
-                              <a href={'#'}>
-                                <span>Jobs</span>
-                            </a>
-                              <a href={'#'}>
-                                <span>Apprenticeships</span>
-                            </a>
+                    <div className={'py-7'}>
+                        <p className={'text-custom-large-bold pb-4'}>More on Ableton.com:</p>
+                        <div className={'flex flex-row gap-5'}>
+                            <Link href={'#'} passHref>
+                                <span className={'text-custom-small text-custom-text'}>Blog</span>
+                            </Link>
+                            <Link href={'#'} passHref>
+                                <span className={'text-custom-small text-custom-text'}>Ableton for the Classroom</span>
+                            </Link>
+                              <Link href={'#'} passHref>
+                                <span className={'text-custom-small text-custom-text'}>Ableton for Colleges and Universities</span>
+                            </Link>
+                              <Link href={'#'} passHref>
+                                <span className={'text-custom-small text-custom-text'}>Certified Training</span>
+                            </Link>
+                              <Link href={'#'} passHref>
+                                <span className={'text-custom-small text-custom-coral'}>About Ableton</span>
+                            </Link>
+                              <Link href={'#'} passHref>
+                                <span className={'text-custom-small text-custom-text'}>Jobs</span>
+                            </Link>
+                              <Link href={'#'} passHref>
+                                <span className={'text-custom-small text-custom-text'}>Apprenticeships</span>
+                            </Link>
                         </div>
-                        <p>More from Ableton:</p>
-                        <div>
-                            <div>
-                                <a href={'#'}>
-                                    <span>Loop</span>
-                                    <span>Watch Talks, Performances and Features from Ableton&apos;s Summit for Music Makers</span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href={'#'}>
-                                    <span>Learning Music</span>
-                                    <span>Learn the fundamentals of music making right in your browser.</span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href={'#'}>
-                                    <span>Learning Synths</span>
-                                    <span>Get started with synthesis using a web-based synth and accompanying lessons.</span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href={'#'}>
-                                    <span>Making Music</span>
-                                    <span>Some tips from 74 Creative Strategies for Electronic Producers.</span>
-                                </a>
-                            </div>
+                        <p className={'text-custom-large-bold text-custom-text pt-7 pb-4'}>More from Ableton:</p>
+                        <div className={'flex flex-row gap-5'}>
+                            <Link href={'#'} passHref className={'flex flex-col'}>
+                                <span className={'text-custom-small-bold text-custom-text'}>Loop</span>
+                                <span className={'text-custom-small text-custom-text'}>Watch Talks, Performances and Features from Ableton&apos;s Summit for Music Makers</span>
+                            </Link>
+                            <Link href={'#'} passHref className={'flex flex-col'}>
+                                <span className={'text-custom-small-bold text-custom-text'}>Learning Music</span>
+                                <span className={'text-custom-small text-custom-text'}>Learn the fundamentals of music making right in your browser.</span>
+                            </Link>
+                            <Link href={'#'} passHref className={'flex flex-col'}>
+                                <span className={'text-custom-small-bold text-custom-text'}>Learning Synths</span>
+                                <span className={'text-custom-small text-custom-text'}>Get started with synthesis using Link web-based synth and accompanying lessons.</span>
+                            </Link>
+                            <Link href={'#'} passHref className={'flex flex-col'}>
+                                <span className={'text-custom-small-bold text-custom-text'}>Making Music</span>
+                                <span className={'text-custom-small text-custom-text'}>Some tips from 74 Creative Strategies for Electronic Producers.</span>
+                            </Link>
                         </div>
                     </div>
                 )

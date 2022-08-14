@@ -5,9 +5,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      // this is for overriding existing color theme
-    },
     extend: {
       colors: {
         // This is for extending the existing color theme
@@ -32,7 +29,7 @@ module.exports = {
           fontWeight: 400,
           lineHeight: '30px',
         }],
-        'custom-large-bold': ['30px', {
+        'custom-large-bold': ['24px', {
           fontWeight: 600,
           lineHeight: '42px',
         }]
