@@ -21,7 +21,6 @@ const SectionOne = () => {
                 </div>
                 <div className={'h-full absolute bg-custom-milan w-3/5 top-0 right-0 z-0'}/>
             </div>
-            <div className={'mb-20'}/>
         </>
     )
 };

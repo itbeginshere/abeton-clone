@@ -53,7 +53,6 @@ const SectionTwo = () => {
                 </div>
                 <p className='text-sm font-medium pt-2'>Why Ableton - Juanpe Bolivar</p>
             </div>
-            <div className={'mb-20'}/>
         </div>
     )
 }

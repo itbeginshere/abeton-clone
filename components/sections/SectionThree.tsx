@@ -22,7 +22,6 @@ const SectionThree = () => {
                 </div>
                 <div className={'h-full absolute bg-custom-snowy-mint w-[68vw] top-0 left-0'}/>
             </div>
-            <div className={'mb-20'}/>
         </div>
     );
 }
