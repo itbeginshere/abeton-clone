@@ -3,6 +3,7 @@ import LandingHeader from '../components/LandingHeader'
 import MainNavbar from '../components/MainNavbar'
 import QuickNavbar from '../components/QuickNavbar'
 import SectionOne from '../components/sections/SectionOne'
+import SectionTwo from '../components/sections/SectionTwo'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <div className={'mb-20'}/>
         <SectionOne />
         <div className={'mb-20'}/>
+        <SectionTwo />
       </main>
 
       <footer>

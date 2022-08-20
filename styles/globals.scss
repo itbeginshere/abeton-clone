@@ -29,6 +29,11 @@ body {
 
   .scrollbar::-webkit-scrollbar-thumb {
     background: var(--color-dark-blue);
-  }
+   }
 
+   *::selection {
+    background: var(--color-dark-blue);
+    color: #FFF;
+    text-shadow: none;
+   }
 }
