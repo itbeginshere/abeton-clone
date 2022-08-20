@@ -18,6 +18,8 @@ module.exports = {
         'section-three-left-image-one': 'url("https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop&h=179&ixjsv=1.1.3&w=238")',
         'section-three-left-image-two': 'url("https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop&h=179&ixjsv=1.1.3&w=238")',
         'section-three-right-image-one': 'url("https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop&h=298&ixjsv=1.1.3&w=298")',
+        'section-five-left-image': 'url("https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop&h=194&ixjsv=1.1.3&w=259")',
+        'section-five-right-image': 'url("https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop&h=326&ixjsv=1.1.3&w=326")',
       },
       colors: {
         // This is for extending the existing color theme
