@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './colors';
 
 html,
 body {
@@ -13,3 +14,21 @@ body {
   margin: 0;
 }
 
+@layer utilities {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    display: block;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: var(--color-blue);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-dark-blue);
+  }
+
+}
