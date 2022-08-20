@@ -5,6 +5,7 @@ import QuickNavbar from '../components/QuickNavbar'
 import SectionFive from '../components/sections/SectionFive'
 import SectionFour from '../components/sections/SectionFour'
 import SectionOne from '../components/sections/SectionOne'
+import SectionSix from '../components/sections/SectionSix'
 import SectionThree from '../components/sections/SectionThree'
 import SectionTwo from '../components/sections/SectionTwo'
 
@@ -31,6 +32,8 @@ export default function Home() {
         <SectionFour />
         <div className={'mb-20'}/>
         <SectionFive />
+        <div className={'mb-20'}/>
+        <SectionSix />
         <div className={'mb-20'}/>
       </main>
 
