@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 import LandingHeader from '../components/LandingHeader'
 import MainNavbar from '../components/MainNavbar'
 import QuickNavbar from '../components/QuickNavbar'
@@ -35,10 +36,10 @@ export default function Home() {
         <div className={'mb-20'}/>
         <SectionSix />
         <div className={'mb-20'}/>
+
+        <Footer />
       </main>
 
-      <footer>
-      </footer>
     </>
   )
 }
