@@ -29,7 +29,11 @@ module.exports = {
         'custom-mauve': '#d5b3ff',
         'custom-snowy-mint': '#b6ffc0',
         'custom-blue': '#0000ff',
-        'custom-text': '#000000'
+        'custom-text': '#000000',
+        'logo-facebook': '#3477F2',
+        'logo-twitter': '#1DA1F2',
+        'logo-youtube': '#FF001D',
+        'logo-instagram': '#F77737',
       },
       fontSize: {
         'custom-extra-small-bold': ['14px',{
