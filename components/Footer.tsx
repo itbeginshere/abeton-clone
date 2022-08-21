@@ -1,46 +1,71 @@
-import Link from 'next/link';
+import FooterHeader from './custom/headers/FooterHeader';
+import FooterGreaterThankLink from './custom/links/FooterGreaterThanLink';
+import FooterLink from './custom/links/FooterLink';
+import FacebookSVG from './svgs/FacebookSVG';
+import InstagramSVG from './svgs/InstagramSVG';
 import LogoSVG from './svgs/LogoSVG';
+import TwitterSVG from './svgs/TwitterSVG';
+import YoutubeSVG from './svgs/YoutubeSVG';
 
 const Footer = () => {
     return (
-        <div className={'p-20 border-solid border-t-2 border-gray-100'}>
-            <h2>Ableton</h2>
+        <div className={'p-20 border-so lid border-t-2 border-gray-100'}>
+            <h2 className={'text-3xl font-semibold'}>Ableton</h2>
             <div>
-                <h5>Sign up to our newsletter</h5>
-                <p>Enter your email address to stay up to date with the latest offers, turtoials, downloads, surveys and more.</p>
-                <form>
-                    <input type={'text'} />
-                    <button type={'submit'}></button>
+                <h5 className={'font-semibold'}>Sign up to our newsletter</h5>
+                <p className={'text-sm leading-6'}>Enter your email address to stay up to date with the latest offers, turtoials, downloads, surveys and more.</p>
+                <form className={'flex flex-row pt-3 pb-8'}>
+                    <input 
+                        type={'text'} 
+                        placeholder={'Email Address'}
+                        className={'w-full bg-gray-200 px-3 font-semibold text-gray-600 placeholder:font-semibold'}
+                    />
+                    <button 
+                        type={'submit'} 
+                        className={'bg-custom-blue py-2 px-7'}
+                    >
+                        <span className={'font-semibold text-white whitespace-nowrap'}>Sign Up</span>
+                    </button>
                 </form>
             </div>
-            <p>Register Live or Push &gt;</p>
-            <p>About Ableton &gt;</p>
-            <p>Jobs &gt;</p>
             <div>
-                <span>Facebook</span>
-                <span>Twitter</span>
-                <span>Youtube</span>
-                <span>Instagram</span>
+                <FooterGreaterThankLink text={'Register Live or Push'}/>
+                <FooterGreaterThankLink text={'About Ableton'}/>
+                <FooterGreaterThankLink text={'Jobs'}/>
+            </div>
+            <div className={'flex flex-row gap-2 mb-8'}>
+                <div className={'bg-logo-facebook p-3 w-min'}>
+                    <FacebookSVG className={'fill-current text-white scale-150'}/>
+                </div>
+                <div className={'bg-logo-twitter p-3 w-min'}>
+                    <TwitterSVG className={'fill-current text-white scale-150'}/>
+                </div>
+                <div className={'bg-logo-youtube p-3 w-min'}>
+                    <YoutubeSVG className={'fill-current text-white scale-150'}/>
+                </div>
+                <div className={'bg-logo-instagram p-3 w-min'}>
+                    <InstagramSVG className={'fill-current text-white scale-150'}/>
+                </div>
             </div>
             <div>
-                <h5>Education</h5>
-                <p>Offers for students and teachers &gt;</p>
-                <p>Ableton for the Classroom &gt;</p>
-                <p>Ableton for Colleges and Universities &gt;</p>
+                <FooterHeader text={'Education'} />
+                <FooterGreaterThankLink text={'Offers for students and teachers'}/>
+                <FooterGreaterThankLink text={'Ableton for the Classroom'}/>
+                <FooterGreaterThankLink text={'Ableton for Colleges and Universities'}/>
             </div>
             <div>
-                <h5>Community</h5>
-                <p>Find Ableton User Groups &gt;</p>
-                <p>Find Certified Training &gt;</p>
-                <p>Become a Certified Trainer &gt;</p>
+                <FooterHeader text={'Community'} />
+                <FooterGreaterThankLink text={'Find Ableton User Groups'}/>
+                <FooterGreaterThankLink text={'Find Certified Training'}/>
+                <FooterGreaterThankLink text={'Become a Certified Trainer'}/>
             </div>
             <div>
-                <h5>Distributers</h5>
-                <p>Find Distributors &gt;</p>
-                <p>Try Push-in-store &gt;</p>
+                <FooterHeader text={'Distributers'} />
+                <FooterGreaterThankLink text={'Find Distributors'}/>
+                <FooterGreaterThankLink text={'Try Push-in-store'}/>
             </div>
             <div>
-                <h5>Language and Location</h5>
+                <FooterHeader text={'Language and Location'} />
                 <select name="language">
                     <option value="en">English</option>
                     <option value="de">Deutsch</option>
@@ -313,26 +338,13 @@ const Footer = () => {
                 </select>
             </div>
             <div>
-                <Link href={'#'}>
-                    <span>Contact Us</span>
-                </Link>
-                <Link href={'#'}>
-                    <span>Press Resources</span>
-                </Link>
-                <Link href={'#'}>
-                    <span>Legal Info</span>
-                </Link>
-                <Link href={'#'}>
-                    <span>Privacy Policy</span>
-                </Link>
-                <Link href={'#'}>
-                    <span>Cookie Settins</span>
-                </Link>
-                <Link href={'#'}>
-                    <span>Imprint</span>
-                </Link>
+                <FooterLink text={'Contact Us'}/>
+                <FooterLink text={'Press Resources'}/>
+                <FooterLink text={'Legal Info'}/>
+                <FooterLink text={'Privacy Policy'}/>
+                <FooterLink text={'Cookie Settins'}/>
+                <FooterLink text={'Imprint'}/>
             </div>
-
             <div>
                 <LogoSVG />
                 <span>Made In Berlin</span>
