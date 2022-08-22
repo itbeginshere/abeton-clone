@@ -21,8 +21,8 @@ const SectionThree = () => {
             <MainSpacer />
             <div className={'py-8 relative'}>
                 <div className={'flex flex-row items-center h-[50vw] justify-between'}>
-                    <div className={'bg-section-five-left-image bg-no-repeat bg-cover w-[33vw] h-[25vw] ml-14 z-10'}/>
-                    <div className={'bg-section-five-right-image bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-14 z-10'}/>
+                    <div className={'bg-section-five-left-image bg-no-repeat bg-cover w-[33vw] h-[25vw] ml-10 z-10'}/>
+                    <div className={'bg-section-five-right-image bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-10 z-10'}/>
                 </div>
                 <div className={'h-full absolute bg-custom-mauve w-[66vw] top-0 right-[18%] z-0'}/>
             </div>
