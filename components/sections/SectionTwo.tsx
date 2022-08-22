@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { useState } from 'react';
+import MainSpacer from '../custom/spacers/MainSpacer';
+import SectionContentWrapper from '../custom/wrappers/SectionContentWrapper';
+import SectionHeaderWrapper from '../custom/wrappers/SectionHeaderWrapper';
 
 const SectionTwo = () => {
 
@@ -14,15 +17,15 @@ const SectionTwo = () => {
         <div className={'mx-14'}>
             <div className={'flex flex-col items-center'}>
                 <div>
-                    <p className={'font-semibold text-lg max-w-[600px] pb-3'}>
+                    <SectionHeaderWrapper>
                         Making music isn&apos;t easy. It takes time, effort, and learning. But when you&apos;re in the flow, it&apos;s incredibly rewarding.
-                    </p>
-                    <p className={'font-normal max-w-[600px] text-sm leading-6'}>
+                    </SectionHeaderWrapper>
+                    <SectionContentWrapper>
                         We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.
-                    </p>
+                    </SectionContentWrapper>
                 </div>
             </div>
-            <div className={'mb-14'}/>
+            <MainSpacer />
             <div>
                 <div className={'pb-[57%] relative cursor-pointer bg-black'} onClick={onShowVideoClick}>
                     {

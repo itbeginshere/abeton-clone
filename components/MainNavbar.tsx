@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import MainNavBarMenuItem from './custom/links/MainNavBarMenuItem';
+import MobileMainNavbarMenuitem from './custom/links/MobileMainNavBarMenuItem';
+import MobileMainNavBarMenuItemSmall from './custom/links/MobileMainNavBarMenuItemSmall';
 import CaretDownSVG from './svgs/CaretDownSVG';
 import CaretUpSVG from './svgs/CaretUpSVG';
 import LogoSVG from './svgs/LogoSVG';
@@ -34,44 +37,38 @@ const MainNavbar = () => {
                             }
                         </div>
                         <div className={'hidden lg:flex lg:flex-row lg:gap-8'}>
-                            <Link href={'#'} className={'pl-6'}>
-                                <span className={'text-custom-small-bold text-custom-text'}>Live</span>
-                            </Link>
-                            <Link href={'#'}>
-                                <span className={'text-custom-small-bold text-custom-text'}>Push</span>
-                            </Link>
-                            <Link href={'#'}>
-                                <span className={'text-custom-small-bold text-custom-text'}>Link</span>
-                            </Link>
-                            <Link href={'#'}>
-                                <span className={'text-custom-small-bold text-custom-text'}>Shop</span>
-                            </Link>
-                            <Link href={'#'}>
-                                <span className={'text-custom-small-bold text-custom-text'}>Packs</span>
-                            </Link>
-                            <Link href={'#'}>
-                                <span className={'text-custom-small-bold text-custom-text'}>Help</span>
-                            </Link>
-                            <Link href={'#'}  className={'flex flex-row items-center'}>
-                                <div onClick={onToggleCollapsibleMore}>
-                                    <span className={'text-custom-small-bold text-custom-coral'}>
-                                        More 
-                                    </span>
-                                    {
-                                        collaspibleMoreToggle ? 
-                                            <MinusSVG className={'fill-current text-custom-coral inline'}/> :
-                                            <PlusSVG className={'fill-current text-custom-coral inline'}/>
-                                    }
-                                </div>
+                            <MainNavBarMenuItem text={'Live'} />
+                            <MainNavBarMenuItem text={'Push'} />
+                            <MainNavBarMenuItem text={'Link'} />
+                            <MainNavBarMenuItem text={'Shop'} />
+                            <MainNavBarMenuItem text={'Packs'} />
+                            <MainNavBarMenuItem text={'Help'} />
+                            <Link href={'#'} passHref className={'flex flex-row items-center'}>
+                                <a>
+                                    <div onClick={onToggleCollapsibleMore}>
+                                        <span className={'text-custom-small-bold text-custom-coral'}>
+                                            More 
+                                        </span>
+                                        {
+                                            collaspibleMoreToggle ? 
+                                                <MinusSVG className={'fill-current text-custom-coral inline'}/> :
+                                                <PlusSVG className={'fill-current text-custom-coral inline'}/>
+                                        }
+                                    </div>
+                                </a>
                             </Link>
                         </div>
                     </div>
                     <div className={'hidden lg:flex lg:flex-row lg:gap-8'}>
-                        <Link href={'#'}>
-                            <span className={'text-custom-extra-small-bold text-custom-blue'}>Try Live for free</span>
+                        <Link href={'#'} passHref>
+                            <a>
+                                <span className={'text-custom-extra-small-bold text-custom-blue'}>Try Live for free</span>
+                            </a>
                         </Link>
-                        <Link href={'#'}>
-                            <span className={'text-custom-extra-small-bold text-custom-text'}>Log in or register</span>
+                        <Link href={'#'} passHref>
+                            <a>
+                                <span className={'text-custom-extra-small-bold text-custom-text'}>Log in or register</span>
+                            </a>
                         </Link>
                     </div>
                 </div>
@@ -80,53 +77,47 @@ const MainNavbar = () => {
                         <div className={'py-7'}>
                             <p className={'text-custom-large-bold pb-4'}>More on Ableton.com:</p>
                             <div className={'flex flex-row gap-5'}>
-                                <Link href={'#'}>
-                                    <span className={'text-custom-small text-custom-text'}>Blog</span>
-                                </Link>
-                                <Link href={'#'}>
-                                    <span className={'text-custom-small text-custom-text'}>Ableton for the Classroom</span>
-                                </Link>
-                                <Link href={'#'}>
-                                    <span className={'text-custom-small text-custom-text'}>Ableton for Colleges and Universities</span>
-                                </Link>
-                                <Link href={'#'}>
-                                    <span className={'text-custom-small text-custom-text'}>Certified Training</span>
-                                </Link>
-                                <Link href={'#'}>
-                                    <span className={'text-custom-small text-custom-coral'}>About Ableton</span>
-                                </Link>
-                                <Link href={'#'}>
-                                    <span className={'text-custom-small text-custom-text'}>Jobs</span>
-                                </Link>
-                                <Link href={'#'}>
-                                    <span className={'text-custom-small text-custom-text'}>Apprenticeships</span>
-                                </Link>
+                                <MainNavBarMenuItem text={'Blog'} />
+                                <MainNavBarMenuItem text={'Ableton for the Classroom'} />
+                                <MainNavBarMenuItem text={'Ableton for Colleges and Universities'} />
+                                <MainNavBarMenuItem text={'Certified Training'} />
+                                <MainNavBarMenuItem text={'About Ableton'} />
+                                <MainNavBarMenuItem text={'Jobs'} />
+                                <MainNavBarMenuItem text={'Apprenticeships'} />
                             </div>
                             <p className={'text-custom-large-bold text-custom-text pt-7 pb-4'}>More from Ableton:</p>
                             <div className={'flex flex-row gap-5'}>
-                                <Link href={'#'} >
-                                    <div className={'flex flex-col'}>
-                                        <span className={'text-custom-small-bold text-custom-text'}>Loop</span>
-                                        <span className={'text-custom-small text-custom-text'}>Watch Talks, Performances and Features from Ableton&apos;s Summit for Music Makers</span>
-                                    </div>
+                                <Link href={'#'} passHref>
+                                   <a>
+                                        <div className={'flex flex-col'}>
+                                            <span className={'text-custom-small-bold text-custom-text'}>Loop</span>
+                                            <span className={'text-custom-small text-custom-text'}>Watch Talks, Performances and Features from Ableton&apos;s Summit for Music Makers</span>
+                                        </div>
+                                   </a>
                                 </Link>
-                                <Link href={'#'}>
-                                    <div className={'flex flex-col'}>
-                                        <span className={'text-custom-small-bold text-custom-text'}>Learning Music</span>
-                                        <span className={'text-custom-small text-custom-text'}>Learn the fundamentals of music making right in your browser.</span>
-                                    </div>
+                                <Link href={'#'} passHref>
+                                    <a>
+                                        <div className={'flex flex-col'}>
+                                            <span className={'text-custom-small-bold text-custom-text'}>Learning Music</span>
+                                            <span className={'text-custom-small text-custom-text'}>Learn the fundamentals of music making right in your browser.</span>
+                                        </div>
+                                    </a>
                                 </Link>
-                                <Link href={'#'}>
-                                    <div className={'flex flex-col'}>
-                                        <span className={'text-custom-small-bold text-custom-text'}>Learning Synths</span>
-                                        <span className={'text-custom-small text-custom-text'}>Get started with synthesis using Link web-based synth and accompanying lessons.</span>
-                                    </div>
+                                <Link href={'#'} passHref>
+                                   <a>
+                                        <div className={'flex flex-col'}>
+                                            <span className={'text-custom-small-bold text-custom-text'}>Learning Synths</span>
+                                            <span className={'text-custom-small text-custom-text'}>Get started with synthesis using Link web-based synth and accompanying lessons.</span>
+                                        </div>
+                                   </a>
                                 </Link>
-                                <Link href={'#'}>
-                                    <div className={'flex flex-col'}>
-                                        <span className={'text-custom-small-bold text-custom-text'}>Making Music</span>
-                                        <span className={'text-custom-small text-custom-text'}>Some tips from 74 Creative Strategies for Electronic Producers.</span>
-                                    </div>
+                                <Link href={'#'} passHref>
+                                    <a>
+                                        <div className={'flex flex-col'}>
+                                            <span className={'text-custom-small-bold text-custom-text'}>Making Music</span>
+                                            <span className={'text-custom-small text-custom-text'}>Some tips from 74 Creative Strategies for Electronic Producers.</span>
+                                        </div>
+                                    </a>
                                 </Link>
                             </div>
                         </div>
@@ -135,58 +126,32 @@ const MainNavbar = () => {
             </div>
             <div className={`absolute bg-custom-blue transition-all duration-500 ${collapsibleMobileMenuToggle ? 'top-0': 'top-[-500%]'} p-5 w-full`}>
                 <div className={'h-[70px]'}/>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-5'}>Live</p>
+                <MobileMainNavbarMenuitem text={'Live'}/>
+                <MobileMainNavbarMenuitem text={'Push'}/>
+                <MobileMainNavbarMenuitem text={'Link'}/>
+                <MobileMainNavbarMenuitem text={'Shop'}/>
+                <MobileMainNavbarMenuitem text={'Packs'}/>
+                <MobileMainNavbarMenuitem text={'Try Live for free'}/>
+                <Link href={'#'} passHref>
+                    <a>
+                        <p className={'text-white font-normal text-xs pb-6'}>Log in or register</p>
+                    </a>
                 </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-5'}>Push</p>
+                <MobileMainNavbarMenuitem text={'More on Ableton.com:'}/>
+                
+                <MobileMainNavBarMenuItemSmall text={'Blog'}/>
+                <MobileMainNavBarMenuItemSmall text={'Ableton for the Classroom'}/>
+                <MobileMainNavBarMenuItemSmall text={'Ableton for Colleges and Universities'}/>
+                <MobileMainNavBarMenuItemSmall text={'Certified Training'}/>
+                <Link href={'#'} passHref>
+                   <a>
+                        <p className={'text-custom-coral font-normal text-sm pb-4'}>About Ableton</p>
+                   </a>
                 </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-5'}>Link</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-5'}>Shop</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-5'}>Packs</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-5'}>Help</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-6'}>Try Live for free</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-normal text-xs pb-6'}>Log in or register</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-semibold text-xl pb-4'}>More on Ableton.com:</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-normal text-sm pb-4'}>Blog</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-normal text-sm pb-4'}>Ableton for the Classroom</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-normal text-sm pb-4'}>Ableton for Colleges and Universities</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-normal text-sm pb-4'}>Certified Training</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-custom-coral font-normal text-sm pb-4'}>About Ableton</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-normal text-sm pb-4'}>Jobs</p>
-                </Link>
-                <Link href={'#'}>
-                    <p className={'text-white font-normal text-sm pb-8'}>Apprenticeships</p>
-                </Link>
-                <div className={'w-full overflow-x-auto scrollbar relative'}>
-                     <Link href={'#'}>
-                        <p className={'text-white font-semibold text-xl pb-4'}>More from Ableton:</p>
-                    </Link>
+                <MobileMainNavBarMenuItemSmall text={'Jobs'}/>
+                <MobileMainNavBarMenuItemSmall text={'Apprenticeships'}/>
+                <div className={'w-full overflow-x-auto scrollbar relative pt-4'}>
+                    <MobileMainNavbarMenuitem text={'More from Ableton:'}/>
                     <div className={'flex flex-row gap-5'}>
                         <div className={'min-w-[235px]'}>
                             <p className={'text-white font-medium text-xs leading-7'}>Loop</p>

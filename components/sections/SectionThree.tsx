@@ -1,17 +1,21 @@
+import MainSpacer from '../custom/spacers/MainSpacer';
+import SectionContentWrapper from '../custom/wrappers/SectionContentWrapper';
+import SectionHeaderWrapper from '../custom/wrappers/SectionHeaderWrapper';
+
 const SectionThree = () => {
     return (
         <div className={'px-14'}>
             <div className={'flex flex-col items-center'}>
                 <div>
-                    <p className={'font-semibold text-lg max-w-[600px] pb-3'}>
+                    <SectionHeaderWrapper>
                         We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.
-                    </p>
-                    <p className={'font-normal max-w-[600px] text-sm leading-6'}>
+                    </SectionHeaderWrapper>
+                    <SectionContentWrapper>
                         Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.
-                    </p>
+                    </SectionContentWrapper>
                 </div>
             </div>
-            <div className={'mb-20'}/>
+            <MainSpacer />
             <div className={'py-14 relative'}>
                 <div className={'flex flex-row items-center'}>
                     <div className={'flex flex-col ml-14'}>

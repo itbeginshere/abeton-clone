@@ -1,20 +1,24 @@
+import MainSpacer from '../custom/spacers/MainSpacer';
+import SectionContentWrapper from '../custom/wrappers/SectionContentWrapper';
+import SectionHeaderWrapper from '../custom/wrappers/SectionHeaderWrapper';
+
 const SectionThree = () => {
     return (
         <div>
             <div className={'flex flex-col items-center px-14'}>
                 <div>
-                    <p className={'font-semibold text-lg max-w-[600px] pb-3'}>
+                    <SectionHeaderWrapper>
                      We&apos;re passionate about what we do, but we&apos;re equally passionate about improving who we are.
-                    </p>
-                    <p className={'font-normal max-w-[600px] text-sm leading-6'}>
+                    </SectionHeaderWrapper>
+                    <SectionContentWrapper>
                         We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.
-                    </p>
-                    <p className={'font-normal max-w-[600px] text-sm leading-6'}>
+                    </SectionContentWrapper>
+                    <SectionContentWrapper>
                         Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.
-                    </p>
+                    </SectionContentWrapper>
                 </div>
             </div>
-            <div className={'mb-14'}/>
+            <MainSpacer />
             <div className={'py-8 relative'}>
                 <div className={'flex flex-row items-center h-[50vw] justify-between'}>
                     <div className={'bg-section-five-left-image bg-no-repeat bg-cover w-[33vw] h-[25vw] ml-14 z-10'}/>
