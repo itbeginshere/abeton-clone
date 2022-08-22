@@ -23,19 +23,19 @@ export default function Home() {
         <MainNavbar />
         <QuickNavbar />
         <LandingHeader />
-        <div className={'mb-20'}/>
+        <div className={'mb-14'}/>
         <SectionOne />
-        <div className={'mb-20'}/>
+        <div className={'mb-14'}/>
         <SectionTwo />
-        <div className={'mb-20'}/>
+        <div className={'mb-14'}/>
         <SectionThree />
-        <div className={'mb-20'}/>
+        <div className={'mb-14'}/>
         <SectionFour />
-        <div className={'mb-20'}/>
+        <div className={'mb-14'}/>
         <SectionFive />
-        <div className={'mb-20'}/>
+        <div className={'mb-14'}/>
         <SectionSix />
-        <div className={'mb-20'}/>
+        <div className={'mb-14'}/>
 
         <Footer />
       </main>

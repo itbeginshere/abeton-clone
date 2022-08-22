@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const SectionFour = () => {
     return (
-        <div>
+        <div className={'px-14'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <p className={'font-semibold text-lg max-w-[600px] pb-3'}>
@@ -12,8 +12,8 @@ const SectionFour = () => {
                     </p>
                 </div>
             </div>
-            <div className={'mb-20'}/>
-            <div className={'ml-20 mr-20'}>
+            <div className={'mb-14'}/>
+            <div>
                 <img 
                 src={"https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&fit=crop&fm=jpg&ixjsv=1.1.3&w=648"}
                 className={'bg-cover bg-no-repeat h-auto w-full'}

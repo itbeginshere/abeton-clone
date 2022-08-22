@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const QuickNavbar = () : React.ReactElement => {
     return (
-        <div className={'flex flex-row sticky'}>
+        <div className={'flex flex-row'}>
             <Link href={'#'}>
                 <span className={'text-xs font-semibold text-custom-coral p-5'}>About</span>
             </Link>

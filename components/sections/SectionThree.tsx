@@ -1,6 +1,6 @@
 const SectionThree = () => {
     return (
-        <div>
+        <div className={'px-14'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <p className={'font-semibold text-lg max-w-[600px] pb-3'}>
@@ -14,11 +14,11 @@ const SectionThree = () => {
             <div className={'mb-20'}/>
             <div className={'py-14 relative'}>
                 <div className={'flex flex-row items-center'}>
-                    <div className={'flex flex-col ml-20'}>
-                        <div className={'bg-section-three-left-image-one bg-no-repeat bg-cover w-[33vw] h-[25vw] mb-20 z-10'}/>
+                    <div className={'flex flex-col ml-14'}>
+                        <div className={'bg-section-three-left-image-one bg-no-repeat bg-cover w-[33vw] h-[25vw] mb-14 z-10'}/>
                         <div className={'bg-section-three-left-image-two bg-no-repeat bg-cover w-[33vw] h-[25vw] z-10'}/>
                     </div>
-                    <div className={'bg-section-three-right-image-one bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-20 mr-20 z-10'}/>
+                    <div className={'bg-section-three-right-image-one bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-14 mr-14 z-10'}/>
                 </div>
                 <div className={'h-full absolute bg-custom-snowy-mint w-[68vw] top-0 left-0'}/>
             </div>

@@ -11,7 +11,7 @@ const SectionTwo = () => {
     };
 
     return (
-        <div>
+        <div className={'mx-14'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <p className={'font-semibold text-lg max-w-[600px] pb-3'}>
@@ -22,8 +22,8 @@ const SectionTwo = () => {
                     </p>
                 </div>
             </div>
-            <div className={'mb-20'}/>
-            <div className={'mx-20'}>
+            <div className={'mb-14'}/>
+            <div>
                 <div className={'pb-[57%] relative cursor-pointer bg-black'} onClick={onShowVideoClick}>
                     {
                         showVideo ? 

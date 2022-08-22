@@ -3,7 +3,7 @@ import Link from 'next/link';
 /* eslint-disable @next/next/no-img-element */
 const SectionSix = () => {
     return (
-        <div>
+        <div className={'px-14'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <p className={'font-semibold text-lg max-w-[600px] pb-3'}>
@@ -14,8 +14,8 @@ const SectionSix = () => {
                     </p>
                 </div>
             </div>
-            <div className={'mb-20'}/>
-            <div className={'ml-20 mr-20'}>
+            <div className={'mb-14'}/>
+            <div>
                 <img 
                     src={"https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&fit=crop&h=394&ixjsv=1.1.3&w=657"}
                     className={'bg-cover bg-no-repeat h-auto w-full'}
