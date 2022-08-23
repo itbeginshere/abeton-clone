@@ -12,10 +12,10 @@ import YoutubeSVG from './svgs/YoutubeSVG';
 
 const Footer = () => {
     return (
-        <div className={'px-14 lg:px-20 py-10 lg:py-16 border-so lid border-t-2 border-gray-100'}>
+        <div className={'px-14 lg:px-20 py-10 lg:py-16 border-so lid border-t-2 border-gray-200'}>
             <h2 className={'text-3xl lg:text-6xl font-semibold'}>Ableton</h2>
-            <div className={'grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-3 lg:py-14'}>
-                <div className={'pt-6 lg:pt-0 lg:col-span-3'}>
+            <div className={'grid lg:grid-cols-[2fr_2fr_3fr] lg:grid-rows-2 lg:gap-3 lg:py-14'}>
+                <div className={'pt-6 lg:pt-0 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-4'}>
                     <h5 className={'font-semibold'}>Sign up to our newsletter</h5>
                     <p className={'text-sm leading-6'}>Enter your email address to stay up to date with the latest offers, turtoials, downloads, surveys and more.</p>
                     <form className={'flex flex-row pt-3 pb-8'}>
@@ -28,7 +28,7 @@ const Footer = () => {
                         </button>
                     </form>
                 </div>
-                <div className={'lg:col-span-1'}>
+                <div className={'lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-2'}> 
                     <div className={'mb-2'}>
                         <FooterGreaterThankLink text={'Register Live or Push'}/>
                         <FooterGreaterThankLink text={'About Ableton'}/>
@@ -49,24 +49,24 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className={'mb-6 lg:mb-0 lg:col-span-2'}>
+                <div className={'mb-6 lg:mb-0 lg:row-start-1 lg:row-end-2 lg:col-start-2 lg:col-end-3'}> 
                     <FooterHeader text={'Education'} />
                     <FooterGreaterThankLink text={'Offers for students and teachers'}/>
                     <FooterGreaterThankLink text={'Ableton for the Classroom'}/>
                     <FooterGreaterThankLink text={'Ableton for Colleges and Universities'}/>
                 </div>
-                <div className={'mb-6 lg:mb-0'}>
+                <div className={'mb-6 lg:mb-0 lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-2'}>
                     <FooterHeader text={'Community'} />
                     <FooterGreaterThankLink text={'Find Ableton User Groups'}/>
                     <FooterGreaterThankLink text={'Find Certified Training'}/>
                     <FooterGreaterThankLink text={'Become a Certified Trainer'}/>
                 </div>
-                <div className={'mb-6 lg:mb-0'}>
+                <div className={'mb-6 lg:mb-0 lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-3'}> 
                     <FooterHeader text={'Distributers'} />
                     <FooterGreaterThankLink text={'Find Distributors'}/>
                     <FooterGreaterThankLink text={'Try Push-in-store'}/>
                 </div>
-                <div>
+                <div className={'lg:row-start-2 lg:row-end-3 lg:col-start-3 lg:col-end-4'}>
                     <FooterHeader text={'Language and Location'} />
                     <div className={'flex flex-row pt-3'}>
                         <LanguageSelection />
