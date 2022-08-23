@@ -5,7 +5,7 @@ interface IFooterHeaderProps {
 
 const FooterHeader = (props : IFooterHeaderProps) => {
     return (
-        <h5 className={'font-semibold'}>{props.text}</h5>
+        <h3 className={'font-semibold'}>{props.text}</h3>
     );
 }
 

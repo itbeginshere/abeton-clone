@@ -14,7 +14,7 @@ const SectionTwo = () => {
     };
 
     return (
-        <div className={'mx-14 lg:mx-20'}>
+        <section className={'mx-14 lg:mx-20'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <SectionHeaderWrapper>
@@ -56,7 +56,7 @@ const SectionTwo = () => {
                 </div>
                 <p className='text-sm font-medium pt-2'>Why Ableton - Juanpe Bolivar</p>
             </div>
-        </div>
+        </section>
     )
 }
 

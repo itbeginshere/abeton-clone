@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import MainSpacer from '../components/custom/spacers/MainSpacer'
-import Footer from '../components/Footer'
-import LandingHeader from '../components/LandingHeader'
-import MainNavbar from '../components/MainNavbar'
-import QuickNavbar from '../components/QuickNavbar'
+import Footer from '../components/custom/root/Footer'
 import SectionFive from '../components/sections/SectionFive'
 import SectionFour from '../components/sections/SectionFour'
 import SectionOne from '../components/sections/SectionOne'
 import SectionSix from '../components/sections/SectionSix'
 import SectionThree from '../components/sections/SectionThree'
 import SectionTwo from '../components/sections/SectionTwo'
+import QuickNavbar from '../components/custom/root/QuickNavbar'
+import MainNavbar from '../components/custom/root/MainNavbar'
+import LandingHeader from '../components/custom/root/LandingHeader'
 
 export default function Home() {
   return (

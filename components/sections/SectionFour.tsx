@@ -5,7 +5,7 @@ import SectionHeaderWrapper from '../custom/wrappers/SectionHeaderWrapper';
 /* eslint-disable @next/next/no-img-element */
 const SectionFour = () => {
     return (
-        <div className={'px-14 lg:px-20'}>
+        <section className={'px-14 lg:px-20'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <SectionHeaderWrapper>
@@ -24,7 +24,7 @@ const SectionFour = () => {
                 alt={'Graphs'}
             />
             </div>
-        </div>
+        </section>
     )
 };
 

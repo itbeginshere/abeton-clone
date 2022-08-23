@@ -1,14 +1,14 @@
-import FooterHeader from './custom/headers/FooterHeader';
-import CountrySelection from './custom/input/CountrySelection';
-import EmailTextField from './custom/input/EmailTextField';
-import LanguageSelection from './custom/input/LanguageSelection';
-import FooterGreaterThankLink from './custom/links/FooterGreaterThanLink';
-import FooterLink from './custom/links/FooterLink';
-import FacebookSVG from './svgs/FacebookSVG';
-import InstagramSVG from './svgs/InstagramSVG';
-import LogoSVG from './svgs/LogoSVG';
-import TwitterSVG from './svgs/TwitterSVG';
-import YoutubeSVG from './svgs/YoutubeSVG';
+import FooterHeader from '../headers/FooterHeader';
+import CountrySelection from '../input/CountrySelection';
+import EmailTextField from '../input/EmailTextField';
+import LanguageSelection from '../input/LanguageSelection';
+import FooterGreaterThankLink from '../links/FooterGreaterThanLink';
+import FooterLink from '../links/FooterLink';
+import FacebookSVG from '../../svgs/FacebookSVG';
+import InstagramSVG from '../../svgs/InstagramSVG';
+import LogoSVG from '../../svgs/LogoSVG';
+import TwitterSVG from '../../svgs/TwitterSVG';
+import YoutubeSVG from '../../svgs/YoutubeSVG';
 
 const Footer = () => {
     return (
@@ -16,7 +16,7 @@ const Footer = () => {
             <h2 className={'text-3xl lg:text-6xl font-semibold'}>Ableton</h2>
             <div className={'grid lg:grid-cols-[2fr_2fr_3fr] lg:grid-rows-2 lg:gap-3 lg:py-14'}>
                 <div className={'pt-6 lg:pt-0 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-4'}>
-                    <h5 className={'font-semibold'}>Sign up to our newsletter</h5>
+                    <h3 className={'font-semibold'}>Sign up to our newsletter</h3>
                     <p className={'text-sm leading-6'}>Enter your email address to stay up to date with the latest offers, turtoials, downloads, surveys and more.</p>
                     <form className={'flex flex-row pt-3 pb-8'}>
                         <EmailTextField />

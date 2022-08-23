@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import MainNavBarMenuItem from './custom/links/MainNavBarMenuItem';
-import MainNavBarSubMenuItem from './custom/links/MainNavBarSubMenuItem';
-import MobileMainNavbarMenuitem from './custom/links/MobileMainNavBarMenuItem';
-import MobileMainNavBarMenuItemSmall from './custom/links/MobileMainNavBarMenuItemSmall';
-import CaretDownSVG from './svgs/CaretDownSVG';
-import CaretUpSVG from './svgs/CaretUpSVG';
-import LogoSVG from './svgs/LogoSVG';
-import MinusSVG from './svgs/MinusSVG';
-import PlusSVG from './svgs/PlusSVG';
+import CaretDownSVG from '../../svgs/CaretDownSVG';
+import CaretUpSVG from '../../svgs/CaretUpSVG';
+import LogoSVG from '../../svgs/LogoSVG';
+import MinusSVG from '../../svgs/MinusSVG';
+import PlusSVG from '../../svgs/PlusSVG';
+import MainNavBarMenuItem from '../links/MainNavBarMenuItem';
+import MainNavBarSubMenuItem from '../links/MainNavBarSubMenuItem';
+import MobileMainNavbarMenuitem from '../links/MobileMainNavBarMenuItem';
+import MobileMainNavBarMenuItemSmall from '../links/MobileMainNavBarMenuItemSmall';
 
 const MainNavbar = () => {
 
@@ -76,7 +76,7 @@ const MainNavbar = () => {
                 {
                     collaspibleMoreToggle && (
                         <div className={'py-7'}>
-                            <p className={'text-2xl font-semibold pb-4'}>More on Ableton.com:</p>
+                            <h3 className={'text-2xl font-semibold pb-4'}>More on Ableton.com:</h3>
                             <div className={'flex flex-row gap-5'}>
                                 <MainNavBarSubMenuItem text={'Blog'} />
                                 <MainNavBarSubMenuItem text={'Ableton for the Classroom'} />
@@ -90,12 +90,12 @@ const MainNavbar = () => {
                                 <MainNavBarSubMenuItem text={'Jobs'} />
                                 <MainNavBarSubMenuItem text={'Apprenticeships'} />
                             </div>
-                            <p className={'text-2xl font-semibold pt-8 pb-4'}>More from Ableton:</p>
+                            <h3 className={'text-2xl font-semibold pt-8 pb-4'}>More from Ableton:</h3>
                             <div className={'flex flex-row gap-5'}>
                                 <Link href={'#'} passHref>
                                    <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-base font-semibold text-black'}>Loop</span>
+                                            <h4 className={'text-base font-semibold text-black'}>Loop</h4>
                                             <span className={'text-sm leading-6 text-black'}>Watch Talks, Performances and Features from Ableton&apos;s Summit for Music Makers</span>
                                         </div>
                                    </a>
@@ -103,7 +103,7 @@ const MainNavbar = () => {
                                 <Link href={'#'} passHref>
                                     <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-base font-semibold text-black'}>Learning Music</span>
+                                            <h4 className={'text-base font-semibold text-black'}>Learning Music</h4>
                                             <span className={'text-sm leading-6 text-black'}>Learn the fundamentals of music making right in your browser.</span>
                                         </div>
                                     </a>
@@ -111,7 +111,7 @@ const MainNavbar = () => {
                                 <Link href={'#'} passHref>
                                    <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-base font-semibold text-black'}>Learning Synths</span>
+                                            <h4 className={'text-base font-semibold text-black'}>Learning Synths</h4>
                                             <span className={'text-sm leading-6 text-black'}>Get started with synthesis using Link web-based synth and accompanying lessons.</span>
                                         </div>
                                    </a>
@@ -119,7 +119,7 @@ const MainNavbar = () => {
                                 <Link href={'#'} passHref>
                                     <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-base font-semibold text-black'}>Making Music</span>
+                                            <h4 className={'text-base font-semibold text-black'}>Making Music</h4>
                                             <span className={'text-sm leading-6 text-black'}>Some tips from 74 Creative Strategies for Electronic Producers.</span>
                                         </div>
                                     </a>
@@ -139,18 +139,17 @@ const MainNavbar = () => {
                 <MobileMainNavbarMenuitem text={'Try Live for free'}/>
                 <Link href={'#'} passHref>
                     <a>
-                        <p className={'text-white font-normal text-xs pb-6'}>Log in or register</p>
+                        <h3 className={'text-white font-normal text-xs pb-6'}>Log in or register</h3>
                     </a>
                 </Link>
                 <MobileMainNavbarMenuitem text={'More on Ableton.com:'}/>
-                
                 <MobileMainNavBarMenuItemSmall text={'Blog'}/>
                 <MobileMainNavBarMenuItemSmall text={'Ableton for the Classroom'}/>
                 <MobileMainNavBarMenuItemSmall text={'Ableton for Colleges and Universities'}/>
                 <MobileMainNavBarMenuItemSmall text={'Certified Training'}/>
                 <Link href={'#'} passHref>
                    <a>
-                        <p className={'text-custom-coral font-normal text-sm pb-4'}>About Ableton</p>
+                        <h3 className={'text-custom-coral font-normal text-sm pb-4'}>About Ableton</h3>
                    </a>
                 </Link>
                 <MobileMainNavBarMenuItemSmall text={'Jobs'}/>
@@ -159,19 +158,19 @@ const MainNavbar = () => {
                     <MobileMainNavbarMenuitem text={'More from Ableton:'}/>
                     <div className={'flex flex-row gap-5'}>
                         <div className={'min-w-[235px]'}>
-                            <p className={'text-white font-medium text-xs leading-7'}>Loop</p>
+                            <h4 className={'text-white font-medium text-xs leading-7'}>Loop</h4>
                             <p className={'text-white font-noraml text-xs leading-5'}>Watch Talks, Performances and Features from Ableton&pos;s Summit for Music Makers</p>
                         </div>
                         <div className={'min-w-[235px]'}>
-                            <p className={'text-white font-medium text-xs leading-7'}>Learning Music</p>
+                            <h4 className={'text-white font-medium text-xs leading-7'}>Learning Music</h4>
                             <p className={'text-white font-noraml text-xs leading-5'}>Watch Talks, Performances and Features from Ableton&pos;s Summit for Music Makers</p>
                         </div>
                         <div className={'min-w-[235px]'}>
-                            <p className={'text-white font-medium text-xs leading-7'}>Learning Synths</p>
+                            <h4 className={'text-white font-medium text-xs leading-7'}>Learning Synths</h4>
                             <p className={'text-white font-noraml text-xs leading-5'}>Get starteed with synthesis using a web-based synth andaccompaning lessons.</p>
                         </div>
                         <div className={'min-w-[235px]'}>
-                            <p className={'text-white font-medium text-xs leading-7'}>Making Music</p>
+                            <h4 className={'text-white font-medium text-xs leading-7'}>Making Music</h4>
                             <p className={'text-white font-noraml text-xs leading-5'}>Some tips 74 Creative Strategries for Electronic Producers </p>
                         </div>
                     </div>

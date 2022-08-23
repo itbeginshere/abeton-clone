@@ -4,7 +4,7 @@ import SectionHeaderWrapper from '../custom/wrappers/SectionHeaderWrapper';
 
 const SectionThree = () => {
     return (
-        <div>
+        <section>
             <div className={'flex flex-col items-center px-14 lg:px-20'}>
                 <div>
                     <SectionHeaderWrapper>
@@ -27,7 +27,7 @@ const SectionThree = () => {
                 </div>
                 <div className={'h-full absolute bg-custom-mauve w-[66vw] xl:w-[933px] top-0 right-[18%] z-0'}/>
             </div>
-        </div>
+        </section>
     );
 }
 
