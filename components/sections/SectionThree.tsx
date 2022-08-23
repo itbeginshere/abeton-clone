@@ -19,12 +19,12 @@ const SectionThree = () => {
             <div className={'py-14 lg:py-20 relative'}>
                 <div className={'flex flex-row items-center'}>
                     <div className={'flex flex-col ml-14 lg:ml-20'}>
-                        <div className={'bg-section-three-left-image-one bg-no-repeat bg-cover w-[33vw] h-[25vw] mb-10 lg:mb-20 z-10'}/>
-                        <div className={'bg-section-three-left-image-two bg-no-repeat bg-cover w-[33vw] h-[25vw] z-10'}/>
+                        <div className={'bg-section-three-left-image-one bg-no-repeat bg-cover w-[33vw] xl:w-[533px] h-[25vw] xl:h-[400px] mb-10 lg:mb-20 z-10'}/>
+                        <div className={'bg-section-three-left-image-two bg-no-repeat bg-cover w-[33vw] xl:w-[533px] h-[25vw] xl:h-[400px] z-10'}/>
                     </div>
-                    <div className={'bg-section-three-right-image-one bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-10 mr-10 lg:ml-20 lg:mr-20 z-10'}/>
+                    <div className={'bg-section-three-right-image-one bg-no-repeat bg-cover w-[42vw]  xl:w-[667px] h-[42vw] xl:h-[667px] ml-10 mr-10 lg:ml-20 lg:mr-20 z-10'}/>
                 </div>
-                <div className={'h-full absolute bg-custom-snowy-mint w-[68vw] top-0 left-0'}/>
+                <div className={'h-full absolute bg-custom-snowy-mint w-[68vw] xl:w-[933px] top-0 left-0'}/>
             </div>
         </div>
     );

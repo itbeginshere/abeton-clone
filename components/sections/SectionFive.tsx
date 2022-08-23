@@ -21,11 +21,11 @@ const SectionThree = () => {
             </div>
             <MainSpacer />
             <div className={'py-8 lg:py-9 relative'}>
-                <div className={'flex flex-row items-center h-[50vw] justify-between'}>
-                    <div className={'bg-section-five-left-image bg-no-repeat bg-cover w-[33vw] h-[25vw] ml-10 z-10'}/>
-                    <div className={'bg-section-five-right-image bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-10 z-10'}/>
+                <div className={'flex flex-row items-center h-[50vw] xl:h-[750px] justify-between'}>
+                    <div className={'bg-section-five-left-image bg-no-repeat bg-cover w-[33vw] xl:w-[533px] h-[25vw] xl:h-[400px] ml-10 lg:ml-20 z-10'}/>
+                    <div className={'bg-section-five-right-image bg-no-repeat bg-cover w-[42vw] xl:w-[667px] h-[42vw] xl:h-[667px] ml-10 lg:ml-20 z-10'}/>
                 </div>
-                <div className={'h-full absolute bg-custom-mauve w-[66vw] top-0 right-[18%] z-0'}/>
+                <div className={'h-full absolute bg-custom-mauve w-[66vw] xl:w-[933px] top-0 right-[18%] z-0'}/>
             </div>
         </div>
     );
