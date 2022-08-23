@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import MainSpacer from '../components/custom/spacers/MainSpacer'
 import Footer from '../components/Footer'
 import LandingHeader from '../components/LandingHeader'
 import MainNavbar from '../components/MainNavbar'
@@ -19,24 +20,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <MainNavbar />
-        <QuickNavbar />
-        <LandingHeader />
-        <div className={'mb-14'}/>
-        <SectionOne />
-        <div className={'mb-14'}/>
-        <SectionTwo />
-        <div className={'mb-14'}/>
-        <SectionThree />
-        <div className={'mb-14'}/>
-        <SectionFour />
-        <div className={'mb-14'}/>
-        <SectionFive />
-        <div className={'mb-14'}/>
-        <SectionSix />
-        <div className={'mb-14'}/>
-        <Footer />
+      <main className={'bg-gray-200'}>
+        <div className={'max-w-screen-2xl bg-white mx-auto'}>
+          <MainNavbar />
+          <QuickNavbar />
+          <LandingHeader />
+          <MainSpacer />
+          <SectionOne />
+          <MainSpacer />
+          <SectionTwo />
+          <MainSpacer />
+          <SectionThree />
+          <MainSpacer />
+          <SectionFour />
+          <MainSpacer />
+          <SectionFive />
+          <MainSpacer />
+          <SectionSix />
+          <MainSpacer />
+          <Footer />
+        </div>
       </main>
 
     </>

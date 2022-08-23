@@ -1,6 +1,6 @@
 const MainSpacer = () => {
     return  (
-        <div className={'mb-14'}/>
+        <div className={'mb-14 lg:mb-20'}/>
     )
 }
 

@@ -5,7 +5,7 @@ import SectionHeaderWrapper from '../custom/wrappers/SectionHeaderWrapper';
 const SectionThree = () => {
     return (
         <div>
-            <div className={'flex flex-col items-center px-14'}>
+            <div className={'flex flex-col items-center px-14 lg:px-20'}>
                 <div>
                     <SectionHeaderWrapper>
                         We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.
@@ -16,13 +16,13 @@ const SectionThree = () => {
                 </div>
             </div>
             <MainSpacer />
-            <div className={'py-14 relative'}>
+            <div className={'py-14 lg:py-20 relative'}>
                 <div className={'flex flex-row items-center'}>
-                    <div className={'flex flex-col ml-14'}>
-                        <div className={'bg-section-three-left-image-one bg-no-repeat bg-cover w-[33vw] h-[25vw] mb-10 z-10'}/>
+                    <div className={'flex flex-col ml-14 lg:ml-20'}>
+                        <div className={'bg-section-three-left-image-one bg-no-repeat bg-cover w-[33vw] h-[25vw] mb-10 lg:mb-20 z-10'}/>
                         <div className={'bg-section-three-left-image-two bg-no-repeat bg-cover w-[33vw] h-[25vw] z-10'}/>
                     </div>
-                    <div className={'bg-section-three-right-image-one bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-10 mr-10 z-10'}/>
+                    <div className={'bg-section-three-right-image-one bg-no-repeat bg-cover w-[42vw] h-[42vw] ml-10 mr-10 lg:ml-20 lg:mr-20 z-10'}/>
                 </div>
                 <div className={'h-full absolute bg-custom-snowy-mint w-[68vw] top-0 left-0'}/>
             </div>

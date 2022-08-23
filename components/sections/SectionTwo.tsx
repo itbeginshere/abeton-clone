@@ -14,7 +14,7 @@ const SectionTwo = () => {
     };
 
     return (
-        <div className={'mx-14'}>
+        <div className={'mx-14 lg:mx-20'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <SectionHeaderWrapper>
@@ -26,8 +26,8 @@ const SectionTwo = () => {
                 </div>
             </div>
             <MainSpacer />
-            <div>
-                <div className={'pb-[57%] relative cursor-pointer bg-black'} onClick={onShowVideoClick}>
+            <div className={'lg:mx-20'}>
+                <div className={'pb-[57%] relative cursor-pointer bg-black '} onClick={onShowVideoClick}>
                     {
                         showVideo ? 
                             <iframe 

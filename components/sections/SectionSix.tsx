@@ -6,7 +6,7 @@ import SectionHeaderWrapper from '../custom/wrappers/SectionHeaderWrapper';
 /* eslint-disable @next/next/no-img-element */
 const SectionSix = () => {
     return (
-        <div className={'px-14'}>
+        <div className={'px-14 lg:px-20'}>
             <div className={'flex flex-col items-center'}>
                 <div>
                     <SectionHeaderWrapper>
@@ -24,13 +24,13 @@ const SectionSix = () => {
                     className={'bg-cover bg-no-repeat h-auto w-full'}
                     alt={'Graphs'}
                 />
-                <div className={'bg-custom-melrose p-16'}>
+                <div className={'bg-custom-melrose p-16 lg:p-20'}>
                     <p className={'font-semibold text-lg leading-7'}>
                         We&apos;re really proud of the work we&apos;ve done so far. But there&apos;s so much more to come. If you&apos;d like to be a part of it, please join us.
                     </p>
                     <Link href={'#'}>
-                        <a className={'pt-6'}>
-                            <p className={'font-semibold text-lg text-custom-blue'}>
+                        <a>
+                            <p className={'font-semibold text-lg text-custom-blue pt-6'}>
                                 See latest jobs &gt;
                             </p>
                         </a>
