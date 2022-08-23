@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import MainNavBarMenuItem from './custom/links/MainNavBarMenuItem';
+import MainNavBarSubMenuItem from './custom/links/MainNavBarSubMenuItem';
 import MobileMainNavbarMenuitem from './custom/links/MobileMainNavBarMenuItem';
 import MobileMainNavBarMenuItemSmall from './custom/links/MobileMainNavBarMenuItemSmall';
 import CaretDownSVG from './svgs/CaretDownSVG';
@@ -24,7 +25,7 @@ const MainNavbar = () => {
 
     return (
         <>
-            <div className={'p-5 border-solid border-b-2 border-gray-100'}>
+            <div className={'p-5 border-solid border-b-2 border-gray-200'}>
                 <div className={'flex flex-row justify-between'}>
                     <div className={'flex flex-row gap-8'}>
                         <LogoSVG className={`tranistion-all duration-500 z-10 fill-current ${collapsibleMobileMenuToggle ? 'text-white' : 'text-black'}`} />
@@ -36,7 +37,7 @@ const MainNavbar = () => {
                                     <CaretDownSVG className={`fill-current scale-75 mt-1 transition-all duration-500 ${collapsibleMobileMenuToggle ? 'text-white' : 'text-black'}`} /> 
                             }
                         </div>
-                        <div className={'hidden lg:flex lg:flex-row lg:gap-8'}>
+                        <div className={'hidden lg:flex lg:flex-row lg:gap-6'}>
                             <MainNavBarMenuItem text={'Live'} />
                             <MainNavBarMenuItem text={'Push'} />
                             <MainNavBarMenuItem text={'Link'} />
@@ -46,7 +47,7 @@ const MainNavbar = () => {
                             <Link href={'#'} passHref className={'flex flex-row items-center'}>
                                 <a>
                                     <div onClick={onToggleCollapsibleMore}>
-                                        <span className={'text-custom-small-bold text-custom-coral'}>
+                                        <span className={'text-base font-semibold text-custom-coral'}>
                                             More 
                                         </span>
                                         {
@@ -62,12 +63,12 @@ const MainNavbar = () => {
                     <div className={'hidden lg:flex lg:flex-row lg:gap-8'}>
                         <Link href={'#'} passHref>
                             <a>
-                                <span className={'text-custom-extra-small-bold text-custom-blue'}>Try Live for free</span>
+                                <span className={'text-xs font-semibold text-custom-blue'}>Try Live for free</span>
                             </a>
                         </Link>
                         <Link href={'#'} passHref>
                             <a>
-                                <span className={'text-custom-extra-small-bold text-custom-text'}>Log in or register</span>
+                                <span className={'text-xs font-semibold text-black'}>Log in or register</span>
                             </a>
                         </Link>
                     </div>
@@ -75,47 +76,51 @@ const MainNavbar = () => {
                 {
                     collaspibleMoreToggle && (
                         <div className={'py-7'}>
-                            <p className={'text-custom-large-bold pb-4'}>More on Ableton.com:</p>
+                            <p className={'text-2xl font-semibold pb-4'}>More on Ableton.com:</p>
                             <div className={'flex flex-row gap-5'}>
-                                <MainNavBarMenuItem text={'Blog'} />
-                                <MainNavBarMenuItem text={'Ableton for the Classroom'} />
-                                <MainNavBarMenuItem text={'Ableton for Colleges and Universities'} />
-                                <MainNavBarMenuItem text={'Certified Training'} />
-                                <MainNavBarMenuItem text={'About Ableton'} />
-                                <MainNavBarMenuItem text={'Jobs'} />
-                                <MainNavBarMenuItem text={'Apprenticeships'} />
+                                <MainNavBarSubMenuItem text={'Blog'} />
+                                <MainNavBarSubMenuItem text={'Ableton for the Classroom'} />
+                                <MainNavBarSubMenuItem text={'Ableton for Colleges and Universities'} />
+                                <MainNavBarSubMenuItem text={'Certified Training'} />
+                               <Link href={'#'} passHref className={'pl-6'}>
+                                    <a>
+                                        <span className={'text-base text-custom-coral'}>About Ableton</span>
+                                    </a>
+                                </Link>
+                                <MainNavBarSubMenuItem text={'Jobs'} />
+                                <MainNavBarSubMenuItem text={'Apprenticeships'} />
                             </div>
-                            <p className={'text-custom-large-bold text-custom-text pt-7 pb-4'}>More from Ableton:</p>
+                            <p className={'text-2xl font-semibold pt-8 pb-4'}>More from Ableton:</p>
                             <div className={'flex flex-row gap-5'}>
                                 <Link href={'#'} passHref>
                                    <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-custom-small-bold text-custom-text'}>Loop</span>
-                                            <span className={'text-custom-small text-custom-text'}>Watch Talks, Performances and Features from Ableton&apos;s Summit for Music Makers</span>
+                                            <span className={'text-base font-semibold text-black'}>Loop</span>
+                                            <span className={'text-sm leading-6 text-black'}>Watch Talks, Performances and Features from Ableton&apos;s Summit for Music Makers</span>
                                         </div>
                                    </a>
                                 </Link>
                                 <Link href={'#'} passHref>
                                     <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-custom-small-bold text-custom-text'}>Learning Music</span>
-                                            <span className={'text-custom-small text-custom-text'}>Learn the fundamentals of music making right in your browser.</span>
+                                            <span className={'text-base font-semibold text-black'}>Learning Music</span>
+                                            <span className={'text-sm leading-6 text-black'}>Learn the fundamentals of music making right in your browser.</span>
                                         </div>
                                     </a>
                                 </Link>
                                 <Link href={'#'} passHref>
                                    <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-custom-small-bold text-custom-text'}>Learning Synths</span>
-                                            <span className={'text-custom-small text-custom-text'}>Get started with synthesis using Link web-based synth and accompanying lessons.</span>
+                                            <span className={'text-base font-semibold text-black'}>Learning Synths</span>
+                                            <span className={'text-sm leading-6 text-black'}>Get started with synthesis using Link web-based synth and accompanying lessons.</span>
                                         </div>
                                    </a>
                                 </Link>
                                 <Link href={'#'} passHref>
                                     <a>
                                         <div className={'flex flex-col'}>
-                                            <span className={'text-custom-small-bold text-custom-text'}>Making Music</span>
-                                            <span className={'text-custom-small text-custom-text'}>Some tips from 74 Creative Strategies for Electronic Producers.</span>
+                                            <span className={'text-base font-semibold text-black'}>Making Music</span>
+                                            <span className={'text-sm leading-6 text-black'}>Some tips from 74 Creative Strategies for Electronic Producers.</span>
                                         </div>
                                     </a>
                                 </Link>

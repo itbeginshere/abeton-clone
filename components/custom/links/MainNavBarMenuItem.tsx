@@ -8,7 +8,7 @@ const MainNavBarMenuItem = (props : IMainNavBarMenuItemProps) => {
     return (
         <Link href={'#'} passHref className={'pl-6'}>
             <a>
-                <span className={'text-custom-small-bold text-custom-text'}>{props.text}</span>
+                <span className={'text-base font-semibold text-black'}>{props.text}</span>
             </a>
         </Link>
     );
