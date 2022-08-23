@@ -12,7 +12,7 @@ import YoutubeSVG from '../../svgs/YoutubeSVG';
 
 const Footer = () => {
     return (
-        <div className={'px-14 lg:px-20 py-10 lg:py-16 border-so lid border-t-2 border-gray-200'}>
+        <div className={'px-14 lg:px-20 py-10 lg:py-16 border-solid border-t-2 border-gray-200'}>
             <h2 className={'text-3xl lg:text-6xl font-semibold'}>Ableton</h2>
             <div className={'grid lg:grid-cols-[2fr_2fr_3fr] lg:grid-rows-2 lg:gap-3 lg:py-14'}>
                 <div className={'pt-6 lg:pt-0 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-4'}>
