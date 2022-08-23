@@ -9,7 +9,6 @@ module.exports = {
       height: {
         'landing-image': 'calc(100vh - 130px)',
       },
-      tra: 'translateY(-50%) translateX(-50%)',
       backgroundImage: {
         'fading-to-blue': 'linear-gradient(to right, rgba(0,0,255,0) 95%,rgba(0,0,255,1) 100%)',
         'landing-image': 'url("https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=547&ixjsv=1.1.3&q=50&w=704")',
@@ -35,24 +34,6 @@ module.exports = {
         'logo-youtube': '#FF001D',
         'logo-instagram': '#F77737',
       },
-      fontSize: {
-        'custom-extra-small-bold': ['14px',{
-          fontWeight: 600,
-          lineHeight: '21px',
-        }],
-        'custom-small-bold': ['18px', {
-            fontWeight: 600,
-            lineHeight: '30px',
-        }],
-        'custom-small': ['18px', {
-          fontWeight: 400,
-          lineHeight: '30px',
-        }],
-        'custom-large-bold': ['24px', {
-          fontWeight: 600,
-          lineHeight: '42px',
-        }]
-      }
     },
   },
   plugins: [],

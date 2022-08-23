@@ -25,7 +25,7 @@ const MainNavbar = () => {
 
     return (
         <>
-            <div className={'p-5 border-solid border-b-2 border-gray-200'}>
+            <nav className={'p-5 border-solid border-b-2 border-gray-200'}>
                 <div className={'flex flex-row justify-between'}>
                     <div className={'flex flex-row gap-8'}>
                         <LogoSVG className={`tranistion-all duration-500 z-10 fill-current ${collapsibleMobileMenuToggle ? 'text-white' : 'text-black'}`} />
@@ -128,8 +128,8 @@ const MainNavbar = () => {
                         </div>
                     )
                 }
-            </div>
-            <div className={`absolute bg-custom-blue transition-all duration-500 ${collapsibleMobileMenuToggle ? 'top-0': 'top-[-500%]'} p-5 w-full`}>
+            </nav>
+            <nav className={`absolute bg-custom-blue transition-all duration-500 ${collapsibleMobileMenuToggle ? 'top-0': 'top-[-500%]'} p-5 w-full`}>
                 <div className={'h-[70px]'}/>
                 <MobileMainNavbarMenuitem text={'Live'}/>
                 <MobileMainNavbarMenuitem text={'Push'}/>
@@ -177,7 +177,7 @@ const MainNavbar = () => {
                     </div>
                     <div className={'absolute top-0 left-0 h-full w-full bg-fading-to-blue'}/>
                 </div>
-            </div>  
+            </nav>  
         </>
     )
 }
